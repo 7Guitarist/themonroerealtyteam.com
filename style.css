@@ -861,10 +861,28 @@ ul.aios-split-nav.nav.header-item {
 }
 .hp-welcome p {
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 400px;
+  font-size: 14px;
+  color: #444444;
+  line-height: 30px;
   letter-spacing: 00.05em;
+  padding-top: 27px;
+  margin-bottom: 6px;
+}
+
+.hp-welcome .site-title-primary {
+  display: flex;
+  position: relative;
+  padding-bottom: 12px;
+}
+.hp-welcome .site-title-primary::before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  bottom: 0;
+  background: rgb(2, 48, 71);
+  width: 782px;
+  height: 2px;
+  left: 0;
 }
 
 /*#endregion Welcome Region */
@@ -987,7 +1005,6 @@ ul.aios-split-nav.nav.header-item {
   max-width: 1250px;
   margin: 0 auto;
 }
-
 .hp-properties .slick-list {
   margin: 0 -0px;
 }
@@ -1009,25 +1026,73 @@ ul.aios-split-nav.nav.header-item {
   position: absolute;
   width: auto;
   z-index: 4;
-
+  background: #fff;
+  width: 337px;
+  height: 287px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   left: 30px;
   bottom: 20px;
+}
+.properties-content {
+  position: relative;
+}
+.hp-properties .properties-content::before {
+  content: "";
+  position: absolute;
+  border: 1px solid #000000;
+  width: 94%;
+  height: 90%;
+  left: 10px;
+  top: 10px;
+  z-index: -1;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .hp-properties .properties-content h3 {
   font-size: 26px;
   letter-spacing: 0.1em;
   font-weight: 700;
-  color: #ffc000;
+
   text-transform: uppercase;
   margin-bottom: 10px;
+  font-family: "Minion Pro", serif;
+  color: #023047;
+  max-width: 157px;
+  margin: 0 auto;
+}
+.bbs {
+  max-width: 167px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  gap: 56px;
+}
+.hp-properties .bbs span::before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  width: 1px;
+  height: 25px;
+  background-color: #20485d;
 }
 
 .hp-properties .properties-content p {
-  font-size: 15px;
-  color: #ffc000;
+  font-size: 14px;
   letter-spacing: 0.1em;
-  margin-bottom: 10px;
+  margin-bottom: 51px;
+  margin-top: 21px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /*#endregion Properties Region */
@@ -1131,16 +1196,42 @@ ul.aios-split-nav.nav.header-item {
   font-size: 26px;
   letter-spacing: 0.1em;
   font-weight: 700;
-  color: #ffc000;
+  font-family: "Minion Pro", serif;
+  color: #023047;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
 .hp-sold .sold-content p {
   font-size: 15px;
-  color: #ffc000;
+  color: #023047;
   letter-spacing: 0.1em;
   margin-bottom: 10px;
+}
+.hp-sold .sold-slick-arrow {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  max-width: 1370px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.hp-sold .sold-slick-arrow span {
+  pointer-events: all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(1.125rem, 1.375vw, 1.375rem);
+  height: min(76px, 5.74vw);
+  width: min(76px, 5.74vw);
+  border: 1px solid #d8d8d8;
+  color: #1f485c;
+  background-color: #fff;
 }
 
 /*#endregion Sold Region */
@@ -1190,6 +1281,9 @@ ul.aios-split-nav.nav.header-item {
   justify-content: center;
   cursor: pointer;
 }
+.hp-testimonials .site-title-primary {
+  padding-bottom: 49px;
+}
 
 .testimonials-slick-arrow span {
   font-size: 22px;
@@ -1209,22 +1303,68 @@ ul.aios-split-nav.nav.header-item {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: #023047;
+  height: 294px;
+}
+.quote {
+  font-size: 102px;
+  position: absolute;
+  color: #fff;
+  top: 12px;
 }
 
 .hp-testimonials .testimonials-content h3 {
-  font-size: 26px;
+  font-size: 14px;
   letter-spacing: 0.1em;
-  font-weight: 700;
-  color: #ffc000;
-  text-transform: uppercase;
+  font-weight: 400;
+  color: #fff;
   margin-bottom: 10px;
+  font-style: italic;
 }
-
+.testimonials-slick-arrow {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  max-width: 1370px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.testimonials-slick-arrow span {
+  pointer-events: all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(1.125rem, 1.375vw, 1.375rem);
+  height: min(76px, 5.74vw);
+  width: min(76px, 5.74vw);
+  border: 1px solid #d8d8d8;
+  color: #1f485c;
+  background-color: #fff;
+}
+.testimonials-slick-arrow span:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(151, 149, 154, 1) 12%,
+    rgba(235, 234, 235, 1) 50%,
+    rgba(151, 149, 154, 1) 88%
+  );
+}
 .hp-testimonials .testimonials-content p {
-  font-size: 15px;
-  color: #ffc000;
+  font-size: 14px;
+  color: #fff;
   letter-spacing: 0.1em;
-  margin-bottom: 10px;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  line-height: 21px;
+  text-align: center;
+  margin-left: 94px;
+  margin-right: 94px;
+  padding-bottom: 40px;
 }
 
 /*#endregion Testimonial Region */
