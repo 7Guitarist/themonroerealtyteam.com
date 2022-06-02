@@ -334,7 +334,7 @@
                     <div class="sold-img canvas-wrapper">
                         <canvas width="465" height="372"></canvas>
                         <img alt="sold" class="img-sold canvas-img img-responsive"
-                            src="<?php echo get_stylesheet_directory_uri() ?>/images/sp-3.jpg.jpg" />
+                            src="<?php echo get_stylesheet_directory_uri() ?>/images/sp-3.jpg" />
                     </div>
                     <div class="sold-content">
                         <h3>$1,987,000</h3>
@@ -554,6 +554,7 @@
 
     </div>
 </section>
+
 <!-- blogs end -->
 <!-- social -->
 <section class="hp-social">
