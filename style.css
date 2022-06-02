@@ -873,20 +873,23 @@ ul.aios-split-nav.nav.header-item {
 .hp-welcome {
   padding: 97px 24px 106px 24px;
 }
+.hp-welcome .site-title-secondary {
+  margin-bottom: 4px;
+}
 .hp-welcome p {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #444444;
-  line-height: 30px;
+  line-height: 2.14;
   letter-spacing: 00.05em;
   padding-top: 27px;
-  margin-bottom: 6px;
+  margin-bottom: 16px;
 }
 
 .hp-welcome .site-title-primary {
-  display: flex;
+  /* display: flex; */
   position: relative;
-  padding-bottom: 12px;
+  padding-bottom: 14px;
 }
 .hp-welcome .site-title-primary::before {
   content: "";
@@ -895,7 +898,7 @@ ul.aios-split-nav.nav.header-item {
   bottom: 0;
   background: rgb(2, 48, 71);
   width: 782px;
-  height: 2px;
+  height: 4px;
   left: 0;
 }
 
@@ -1015,6 +1018,15 @@ ul.aios-split-nav.nav.header-item {
   padding: 30px 24px 30px 24px;
 }
 
+.hp-properties .site-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: grey;
+  min-width: 250px;
+}
+
 .hp-properties .properties-slick {
   max-width: 1250px;
   margin: 0 auto;
@@ -1080,7 +1092,7 @@ ul.aios-split-nav.nav.header-item {
   max-width: 157px;
   margin: 0 auto;
 }
-.bbs {
+.hp-properties .bbs {
   max-width: 167px;
   margin: 0 auto;
   position: relative;
@@ -1114,11 +1126,28 @@ ul.aios-split-nav.nav.header-item {
 /*#region Sold Region */
 
 .hp-sold {
-  padding: 30px 24px 30px 24px;
+  padding: 52px 0 143px;
+}
+.sold-slick-wrapper {
+  position: relative;
 }
 
+.hp-sold .site-title-primary {
+  margin-bottom: 52px;
+}
+
+.region-sold-container > .site-btn {
+  min-width: 272px;
+}
+.sold-slick-wrapper {
+  margin-bottom: 53px;
+  padding: 0 4vw;
+}
+.hp-sold .site-btn {
+  margin: 0 auto;
+}
 .hp-sold .sold-slick {
-  max-width: 1250px;
+  max-width: 1412px;
   margin: 0 auto;
 }
 
@@ -1165,7 +1194,7 @@ ul.aios-split-nav.nav.header-item {
 .hp-sold .sold-img::before {
   content: "";
   position: absolute;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.55);
   width: 100%;
   height: 100%;
   left: 0;
@@ -1198,29 +1227,80 @@ ul.aios-split-nav.nav.header-item {
 
 .hp-sold .sold-content {
   position: absolute;
-  width: auto;
+  width: 90.9%;
+  height: 262px;
   z-index: 4;
-
+  background: rgba(255, 255, 255, 0.9);
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hp-sold .sold-item:hover .sold-content {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .hp-sold .sold-content h3 {
-  font-size: 26px;
-  letter-spacing: 0.1em;
-  font-weight: 700;
+  font-size: 36px;
+  font-weight: 400;
   font-family: "Minion Pro", serif;
   color: #023047;
   text-transform: uppercase;
+  text-align: center;
   margin-bottom: 10px;
 }
 
 .hp-sold .sold-content p {
-  font-size: 15px;
-  color: #023047;
-  letter-spacing: 0.1em;
-  margin-bottom: 10px;
+  font-size: 18px;
+  color: #444444;
+  text-transform: uppercase;
+  line-height: 1.33;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.hp-sold .bbs {
+  font-size: 18px;
+  color: #444444;
+}
+.hp-sold .bbs {
+  position: relative;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.hp-sold .sold-content .site-btn {
+  min-width: 221px;
+  background: rgb(151, 149, 154);
+  background: linear-gradient(
+    90deg,
+    rgba(151, 149, 154, 1) 12%,
+    rgba(235, 234, 235, 1) 50%,
+    rgba(151, 149, 154, 1) 88%
+  );
+}
+.hp-sold .bbs span::before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  width: 1px;
+  height: 27px;
+  background-color: #20485d;
 }
 .hp-sold .sold-slick-arrow {
   position: absolute;
@@ -1231,7 +1311,7 @@ ul.aios-split-nav.nav.header-item {
   display: flex;
   justify-content: space-between;
   pointer-events: none;
-  max-width: 1370px;
+  max-width: 1520px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -1246,6 +1326,16 @@ ul.aios-split-nav.nav.header-item {
   border: 1px solid #d8d8d8;
   color: #1f485c;
   background-color: #fff;
+}
+
+.hp-sold .sold-slick-arrow span:hover {
+  background: rgb(151, 149, 154);
+  background: linear-gradient(
+    90deg,
+    rgba(151, 149, 154, 1) 12%,
+    rgba(235, 234, 235, 1) 50%,
+    rgba(151, 149, 154, 1) 88%
+  );
 }
 
 /*#endregion Sold Region */

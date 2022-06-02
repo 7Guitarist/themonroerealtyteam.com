@@ -353,7 +353,7 @@
                     <div class="sold-img canvas-wrapper">
                         <canvas width="465" height="372"></canvas>
                         <img alt="sold" class="img-sold canvas-img img-responsive"
-                            src="<?php echo get_stylesheet_directory_uri() ?>/images/sp-3.jpg.jpg" />
+                            src="<?php echo get_stylesheet_directory_uri() ?>/images/sp-3.jpg" />
                     </div>
                     <div class="sold-content">
                         <h3>$1,987,000</h3>
@@ -374,7 +374,10 @@
                 <span class="ai-font-arrow-h-n next"></span>
             </div>
         </div>
-        <a href="[blogurl]" aria-label="view all properties" class="site-btn">view all properties</a>
+        <a href="[blogurl]" aria-label="view all properties" class="site-btn">
+            <span>view all properties</span>
+            <span class="btn-plus">+</span>
+        </a>
     </div>
 </section>
 <!-- sold end -->
