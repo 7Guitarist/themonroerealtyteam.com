@@ -222,7 +222,7 @@
                 <div class="team-img canvas-wrapper">
                     <canvas width="339" height="339"></canvas>
                     <img alt="team" class="img-team canvas-img img-responsive"
-                        src="<?php echo get_stylesheet_directory_uri() ?>/images/team-5.jpg" />
+                        src="<?php echo get_stylesheet_directory_uri() ?>/images/team-4.jpg" />
                 </div>
                 <div class="team-content">
                     <strong>ANGEL ISAIAH GONZALEZ</strong>
@@ -231,7 +231,7 @@
             </a>
         </div>
         <a href="[blogurl]" aria-label="Meet the team" class="site-btn">
-            <span class="site-btn">Meet the team</span>
+            <span>Meet the team</span>
             <span class="btn-plus">+</span>
         </a>
     </div>
@@ -473,7 +473,7 @@
             </div>
         </div>
         <a href="[blogurl]" aria-label="view more testimonials" class="site-btn">
-            <span class="site-btn">view more testimonials</span>
+            <span>view more testimonials</span>
             <span class="btn-plus">+</span>
         </a>
 
@@ -486,7 +486,7 @@
         <strong class="site-title-primary">Featured Vlogs</strong>
         <div class="blogs-slick-wrapper">
             <div class="blogs-slick">
-                <a href="https://www.youtube.com/watch?v=mSgTCmR5aPQ" aria-label="blogs"
+                <a href="https://www.youtube.com/watch?v=mSgTCmR5aPQ" target="_blank" aria-label="blogs"
                     class="blogs-item aios-video-popup">
                     <div class="blogs-img canvas-wrapper">
                         <canvas width="564" height="333"></canvas>
@@ -497,7 +497,7 @@
                         <span class="ai-font-play-button-a"></span>
                     </div>
                 </a>
-                <a href="https://www.youtube.com/watch?v=mSgTCmR5aPQ" aria-label="blogs"
+                <a href="https://www.youtube.com/watch?v=mSgTCmR5aPQ" target="_blank" aria-label="blogs"
                     class="blogs-item aios-video-popup">
                     <div class="blogs-img canvas-wrapper">
                         <canvas width="564" height="333"></canvas>
@@ -508,7 +508,7 @@
                         <span class="ai-font-play-button-a"></span>
                     </div>
                 </a>
-                <a href="https://www.youtube.com/watch?v=mSgTCmR5aPQ" aria-label="blogs"
+                <a href="https://www.youtube.com/watch?v=mSgTCmR5aPQ" target="_blank" aria-label="blogs"
                     class="blogs-item aios-video-popup">
                     <div class="blogs-img canvas-wrapper">
                         <canvas width="564" height="333"></canvas>
@@ -519,7 +519,7 @@
                         <span class="ai-font-play-button-a"></span>
                     </div>
                 </a>
-                <a href="https://www.youtube.com/watch?v=mSgTCmR5aPQ" aria-label="blogs"
+                <a href="https://www.youtube.com/watch?v=mSgTCmR5aPQ" target="_blank" aria-label="blogs"
                     class="blogs-item aios-video-popup">
                     <div class="blogs-img canvas-wrapper">
                         <canvas width="564" height="333"></canvas>
@@ -530,12 +530,12 @@
                         <span class="ai-font-play-button-a"></span>
                     </div>
                 </a>
-                <a href="https://www.youtube.com/watch?v=mSgTCmR5aPQ" aria-label="blogs"
+                <a href="https://www.youtube.com/watch?v=mSgTCmR5aPQ" target="_blank" aria-label="blogs"
                     class="blogs-item aios-video-popup">
                     <div class="blogs-img canvas-wrapper">
                         <canvas width="564" height="333"></canvas>
                         <img alt="blogs" class="img-blogs canvas-img img-responsive"
-                            src="<?php echo get_stylesheet_directory_uri() ?>/featured-vlogs-4.jpg" />
+                            src="<?php echo get_stylesheet_directory_uri() ?>/images/featured-vlogs-4.jpg" />
                     </div>
                     <div class="blogs-content">
                         <span class="ai-font-play-button-a"></span>

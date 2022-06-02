@@ -296,6 +296,16 @@
   /*#endregion Contact Region */
 
   /*#region Footer */
+  .region-footer-container {
+    max-width: 880px;
+    margin: 0 auto;
+  }
+  .location br {
+    display: none;
+  }
+  .footer-mid strong {
+    font-size: 19px;
+  }
   /*#endregion Footer */
   /*#region Fixed smi */
   /*#endregion Fixed smi */
@@ -354,8 +364,37 @@
     max-width: 600px;
   }
 
-  /*#region Contact */
+  /* TEAM */
+  .hp-team .team-slick {
+    max-width: 690px;
+  }
 
+  /* VLOGS */
+  .blogs-slick-arrow {
+    position: relative;
+    justify-content: center;
+    gap: 20px;
+    margin: 35px 0;
+    padding: 0;
+    top: initial;
+    left: initial;
+    transform: none;
+  }
+
+  .blogs-slick-arrow span {
+    width: 70px;
+    height: 70px;
+    font-size: 22px;
+  }
+
+  /*#region Contact */
+  .hp-contact {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .region-contact-container {
+    padding: 0 15px;
+  }
   .contact-form .form-md {
     width: 100%;
   }
@@ -368,6 +407,41 @@
   }
 
   /*#endregion Contact */
+
+  /* Footer */
+  .footer-logo {
+    flex-direction: column;
+    gap: 27px;
+  }
+  .footer-mid {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-mid strong,
+  .mls,
+  .copyright {
+    text-align: center;
+  }
+  .footer-group .copyright {
+    max-width: 600px;
+  }
+  .fci-wrapper {
+    align-items: center;
+  }
+
+  .footernav {
+    text-align: center;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .footer-group ul {
+    justify-content: center;
+  }
+  .footer {
+    padding: 0 15px 75px;
+  }
   /* The following are used on inner pages. Please edit carefully. */
   .aios-mobile-header-wrapper {
     z-index: 1020 !important;
@@ -393,6 +467,11 @@
 
 @media only screen and (max-width: 767px) {
   /* 481 */
+  /* TEAM */
+  /* TEAM */
+  .hp-team .team-slick {
+    max-width: 339px;
+  }
   .ip-banner .container {
     width: 100%;
   }
@@ -406,7 +485,14 @@
     font-size: 38px;
   }
   /*#endregion Global */
-
+  /* VLOGS */
+  .hp-blogs .blogs-slick {
+    padding: 0;
+  }
+  /* Contact */
+  .contact-form div.wpcf7-response-output {
+    font-size: 11px;
+  }
   /*#region Footer */
   /*#endregion Footer */
   /*#region Fixed smi */
