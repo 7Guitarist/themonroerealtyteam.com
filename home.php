@@ -11,10 +11,10 @@
 <!-- cta -->
 <section class="hp-cta">
     <div class="region-cta-container">
-        <a href="[blogurl]" aria-label="View Properties" class="site-btn">View Properties</a>
-        <a href="[blogurl]" aria-label="Contact us" class="site-btn">Contact us</a>
-        <a href="[blogurl]" aria-label="Make an Appointment" class="site-btn">Make an Appointment</a>
-        <a href="[blogurl]" aria-label="Join our team" class="site-btn">Join our team</a>
+        <a href="[blogurl]" aria-label="View Properties" class="cta-btn">View Properties</a>
+        <a href="[blogurl]" aria-label="Contact us" class="cta-btn">Contact us</a>
+        <a href="[blogurl]" aria-label="Make an Appointment" class="cta-btn">Make an Appointment</a>
+        <a href="[blogurl]" aria-label="Join our team" class="cta-btn">Join our team</a>
     </div>
 
     <div class="site-bg">
