@@ -12,9 +12,9 @@
 <section class="hp-cta">
     <div class="region-cta-container">
         <a href="[blogurl]" aria-label="View Properties" class="cta-btn">View Properties</a>
-        <a href="[blogurl]" aria-label="Contact us" class="cta-btn">Contact us</a>
-        <a href="[blogurl]" aria-label="Make an Appointment" class="cta-btn">Make an Appointment</a>
-        <a href="[blogurl]" aria-label="Join our team" class="cta-btn">Join our team</a>
+        <a href="[blogurl]" aria-label="Contact us" class="cta-btn cta-even">Contact us</a>
+        <a href="[blogurl]" aria-label="Make an Appointment" class="cta-btn">Make an <br> Appointment</a>
+        <a href="[blogurl]" aria-label="Join our team" class="cta-btn cta-btn-last">Join our team</a>
     </div>
 
     <div class="site-bg">
@@ -60,18 +60,7 @@
                 <strong class="site-title-primary">Quick Search</strong>
             </div>
             <div class="secondary-qs-item">
-                <select aria-label="qs-fields">
-                    <option value="SFR,CND">House / Condo</option>
-                    <option value="SFR">House Only</option>
-                    <option value="CND">Condo Only</option>
-                    <option value="RI">Multi-Family</option>
-                    <option value="COM">Commercial</option>
-                    <option value="LL">Lots / Land</option>
-                    <option value="RI">Multi-Unit Residential</option>
-                    <option value="MH">Mobile Home</option>
-                    <option value="RNT">Rental</option>
-                    <option value="FRM">Farms</option>
-                </select>
+                <input type="text" placeholder="Property Type" aria-label="qs-fields" />
             </div>
             <div class="tertiary-qs-item">
                 <input type="text" placeholder="City or Zip" aria-label="qs-fields" />
@@ -115,13 +104,13 @@
                 </select>
             </div>
             <div class="eighth-qs-item">
-                <input type="text" placeholder="ai-font-magnifying-glass-b" aria-label="qs-fields" />
+                <input type="text" class="ai-font-magnifying-glass-b qs-search" aria-label="qs-fields" />
             </div>
             <div class="ninth-qs-item">
-                <a href="[blogurl]" aria-label="Settings" class="site-btn">
+                <a href="[blogurl]" aria-label="Settings" class="qs-settings">
                     <img alt="agent" class="img-responsive"
-                        src="<?php echo get_stylesheet_directory_uri() ?>/images/qs-setting.png" width="65"
-                        height="63" />
+                        src="<?php echo get_stylesheet_directory_uri() ?>/images/qs-setting.png" width="25"
+                        height="25" />
                 </a>
             </div>
         </div>
@@ -248,6 +237,10 @@
                     <canvas width="1600" height="573"></canvas>
                     <img alt="properties" class="img-properties canvas-img img-responsive"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/properties-1.jpg" />
+                    <span class="site-btn">
+                        <span>VIEW DETAILS</span>
+                        <span class="btn-plus">+</span>
+                    </span>
                 </div>
                 <div class="properties-content">
                     <h3>$1,987,000</h3>
@@ -257,16 +250,17 @@
                         <span>5 Baths</span>
                     </div>
                 </div>
-                <span class="site-btn">
-                    <span>VIEW DETAILS</span>
-                    <span class="btn-plus">+</span>
-                </span>
+
             </a>
             <a href="[blogurl]" aria-label="properties" class="properties-item">
                 <div class="properties-img canvas-wrapper">
                     <canvas width="1600" height="573"></canvas>
                     <img alt="properties" class="img-properties canvas-img img-responsive"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/properties-1.jpg" />
+                    <span class="site-btn">
+                        <span>VIEW DETAILS</span>
+                        <span class="btn-plus">+</span>
+                    </span>
                 </div>
                 <div class="properties-content">
                     <h3>$1,987,000</h3>
@@ -277,10 +271,7 @@
 
                     </div>
                 </div>
-                <span class="site-btn">
-                    <span>VIEW DETAILS</span>
-                    <span class="btn-plus">+</span>
-                </span>
+
             </a>
         </div>
     </div>
@@ -394,6 +385,10 @@
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/featured-area1.jpg" />
                 </div>
                 <span>The Woodlands</span>
+                <div class="areas-bg">
+                    <img alt="areas" src="<?php echo get_stylesheet_directory_uri() ?>/images/fa-logo.png" width="274"
+                        height="344" />
+                </div>
             </a>
 
 
@@ -404,6 +399,10 @@
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/featured-area2.jpg" />
                 </div>
                 <span>Sugarland</span>
+                <div class="areas-bg">
+                    <img alt="areas" src="<?php echo get_stylesheet_directory_uri() ?>/images/fa-logo.png" width="274"
+                        height="344" />
+                </div>
             </a>
             <a href="[blogurl]" aria-label="areas" class="wrapper-item">
                 <div class="areas-img canvas-wrapper">
@@ -412,6 +411,10 @@
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/featured-area3.jpg" />
                 </div>
                 <span>Clear Lake</span>
+                <div class="areas-bg">
+                    <img alt="areas" src="<?php echo get_stylesheet_directory_uri() ?>/images/fa-logo.png" width="274"
+                        height="344" />
+                </div>
             </a>
         </div>
 
@@ -423,6 +426,10 @@
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/featured-area4.jpg" />
                 </div>
                 <span>Richmond</span>
+                <div class="areas-bg">
+                    <img alt="areas" src="<?php echo get_stylesheet_directory_uri() ?>/images/fa-logo.png" width="274"
+                        height="344" />
+                </div>
             </a>
             <a href="[blogurl]" aria-label="areas" class="wrapper-item">
                 <div class="areas-img canvas-wrapper">
@@ -431,6 +438,10 @@
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/featured-area5.jpg" />
                 </div>
                 <span>Friendswood</span>
+                <div class="areas-bg">
+                    <img alt="areas" src="<?php echo get_stylesheet_directory_uri() ?>/images/fa-logo.png" width="274"
+                        height="344" />
+                </div>
             </a>
             <a href="[blogurl]" aria-label="areas" class="wrapper-item">
                 <div class="areas-img canvas-wrapper">
@@ -439,6 +450,10 @@
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/featured-area6.jpg" />
                 </div>
                 <span>Katy</span>
+                <div class="areas-bg">
+                    <img alt="areas" src="<?php echo get_stylesheet_directory_uri() ?>/images/fa-logo.png" width="274"
+                        height="344" />
+                </div>
             </a>
 
         </div>
@@ -483,6 +498,10 @@
             <span class="btn-plus">+</span>
         </a>
 
+    </div>
+    <div class="site-bg">
+        <img alt="background" src="<?php echo get_stylesheet_directory_uri() ?>/images/testi-bg.jpg" width="1427"
+            height="381" />
     </div>
 </section>
 <!-- testimonials end -->

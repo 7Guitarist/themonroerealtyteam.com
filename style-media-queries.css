@@ -27,34 +27,45 @@
   .quick-search-form {
     display: grid;
     grid-template-columns: repeat(100, 1fr);
-    max-width: 1180px;
+    max-width: 1140px;
     margin: 0 auto;
-    gap: 2px;
     align-items: center;
   }
   .primary-qs-item {
-    grid-column: 1/14;
+    grid-column: 1/-1;
+    grid-row: 1;
   }
   .secondary-qs-item {
     grid-column: 15/30;
+    grid-row: 2;
   }
   .tertiary-qs-item {
     grid-column: 30/44;
+    grid-row: 2;
   }
   .fourth-qs-item {
     grid-column: 44/52;
+    grid-row: 2;
   }
   .fifth-qs-item {
     grid-column: 52/60;
+    grid-row: 2;
   }
   .sixth-qs-item {
     grid-column: 60/68;
+    grid-row: 2;
   }
   .seventh-qs-item {
     grid-column: 68/76;
+    grid-row: 2;
   }
   .eighth-qs-item {
     grid-column: 77/89;
+    grid-row: 2;
+  }
+
+  .ninth-qs-item {
+    grid-row: 2;
   }
 
   /*#endregion Quick Search Region */
@@ -274,7 +285,15 @@
   /*#endregion Team Region */
 
   /*#region Properties Region */
+  .hp-properties .properties-content {
+    width: 335px;
+    height: 283px;
+  }
 
+  .hp-properties .site-btn {
+    min-width: 220px;
+    font-size: 12px;
+  }
   /*#endregion Properties Region */
 
   /*#region Sold Region */
@@ -307,6 +326,15 @@
   /*#endregion Areas Region */
 
   /*#region Testimonial Region */
+  .hp-testimonials .testimonials-slick {
+    max-width: 900px;
+  }
+  .hp-testimonials {
+    padding: 112px 15px 82px;
+  }
+  .testimonials-slick-arrow {
+    max-width: 992px;
+  }
 
   /*#endregion Testimonial Region */
 
@@ -344,7 +372,9 @@
   body.is-open {
     overflow: auto;
   }
-
+  .site-bg img {
+    object-fit: cover;
+  }
   .site-title {
     text-align: center;
   }
@@ -380,7 +410,14 @@
   }
 
   /*#endregion Header */
-
+  /* CTA */
+  .region-cta-container {
+    grid-template-columns: 1fr;
+    padding: 30px 0;
+  }
+  .cta-btn {
+    padding: 30px 0;
+  }
   /* WELCOME */
   .hp-welcome {
     padding: 97px 15px 106px;
@@ -400,6 +437,50 @@
     text-align: center;
     max-width: 777px;
     margin: 0 auto 20px;
+  }
+
+  /* Properties */
+  .hp-properties .properties-content {
+    position: relative;
+    left: initial;
+    bottom: initial;
+    margin: 40px auto 0;
+  }
+  .region-areas-container {
+    flex-direction: column;
+    max-width: 679px;
+  }
+
+  /* AREAS */
+  .region-areas-container {
+    padding: 0 15px;
+  }
+
+  .areas-bg img {
+    width: 50%;
+    height: 90%;
+  }
+
+  /* TEstimonials */
+  .testimonials-slick-arrow {
+    max-width: 992px;
+    position: relative;
+    top: initial;
+    left: initial;
+    transform: none;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  .hp-testimonials .site-btn {
+    min-width: 290px;
+    font-size: 12px;
+  }
+
+  .testimonials-slick-arrow span {
+    width: 70px;
+    height: 70px;
+    font-size: 22px;
   }
 
   /* Buffalo */
@@ -555,6 +636,24 @@
   /*#region Global */
   .site-title-primary {
     font-size: 38px;
+  }
+
+  /* Properties */
+  .hp-properties .canvas-wrapper {
+    height: 210px;
+  }
+  .hp-properties .properties-content {
+    width: 100%;
+  }
+
+  /* AREAS */
+  .hp-areas .wrapper-item span {
+    font-size: 18px;
+    bottom: 17px;
+    left: 17px;
+  }
+  .hp-areas .site-title-primary {
+    font-size: 32px;
   }
 
   /* SOLD */
