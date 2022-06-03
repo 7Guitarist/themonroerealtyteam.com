@@ -241,6 +241,7 @@
 <!-- properties -->
 <section class="hp-properties">
     <div class="region-properties-container">
+        <strong class="site-title-primary">Featured Properties</strong>
         <div class="properties-slick">
             <a href="[blogurl]" aria-label="properties" class="properties-item">
                 <div class="properties-img canvas-wrapper">
@@ -265,7 +266,7 @@
                 <div class="properties-img canvas-wrapper">
                     <canvas width="1600" height="573"></canvas>
                     <img alt="properties" class="img-properties canvas-img img-responsive"
-                        src="<?php echo get_stylesheet_directory_uri() ?>/images/properties-2.jpg" />
+                        src="<?php echo get_stylesheet_directory_uri() ?>/images/properties-1.jpg" />
                 </div>
                 <div class="properties-content">
                     <h3>$1,987,000</h3>
@@ -383,6 +384,7 @@
 <!-- sold end -->
 <!-- areas -->
 <section class="hp-areas">
+    <strong class="site-title-primary">featured areas</strong>
     <div class="region-areas-container">
         <div class="area-wrapper1">
             <a href="[blogurl]" aria-label="areas" class="wrapper-item">
@@ -407,38 +409,39 @@
                 <div class="areas-img canvas-wrapper">
                     <canvas width="679" height="344"></canvas>
                     <img alt="areas" class="img-areas canvas-img img-responsive"
-                        src="<?php echo get_stylesheet_directory_uri() ?>/images/featured-area2.jpg" />
+                        src="<?php echo get_stylesheet_directory_uri() ?>/images/featured-area3.jpg" />
                 </div>
                 <span>Clear Lake</span>
             </a>
         </div>
-    </div>
-    <div class="area-wrapper2">
-        <a href="[blogurl]" aria-label="areas" class="wrapper-item">
-            <div class="areas-img canvas-wrapper">
-                <canvas width="679" height="344"></canvas>
-                <img alt="areas" class="img-areas canvas-img img-responsive"
-                    src="<?php echo get_stylesheet_directory_uri() ?>/images/featured-area4.jpg" />
-            </div>
-            <span>Richmond</span>
-        </a>
-        <a href="[blogurl]" aria-label="areas" class="wrapper-item">
-            <div class="areas-img canvas-wrapper">
-                <canvas width="679" height="344"></canvas>
-                <img alt="areas" class="img-areas canvas-img img-responsive"
-                    src="<?php echo get_stylesheet_directory_uri() ?>/images/featured-area5.jpg" />
-            </div>
-            <span>Friendswood</span>
-        </a>
-        <a href="[blogurl]" aria-label="areas" class="wrapper-item">
-            <div class="areas-img canvas-wrapper">
-                <canvas width="679" height="344"></canvas>
-                <img alt="areas" class="img-areas canvas-img img-responsive"
-                    src="<?php echo get_stylesheet_directory_uri() ?>/images/featured-area6.jpg" />
-            </div>
-            <span>Katy</span>
-        </a>
 
+        <div class="area-wrapper2">
+            <a href="[blogurl]" aria-label="areas" class="wrapper-item">
+                <div class="areas-img canvas-wrapper">
+                    <canvas width="679" height="344"></canvas>
+                    <img alt="areas" class="img-areas canvas-img img-responsive"
+                        src="<?php echo get_stylesheet_directory_uri() ?>/images/featured-area4.jpg" />
+                </div>
+                <span>Richmond</span>
+            </a>
+            <a href="[blogurl]" aria-label="areas" class="wrapper-item">
+                <div class="areas-img canvas-wrapper">
+                    <canvas width="679" height="344"></canvas>
+                    <img alt="areas" class="img-areas canvas-img img-responsive"
+                        src="<?php echo get_stylesheet_directory_uri() ?>/images/featured-area5.jpg" />
+                </div>
+                <span>Friendswood</span>
+            </a>
+            <a href="[blogurl]" aria-label="areas" class="wrapper-item">
+                <div class="areas-img canvas-wrapper">
+                    <canvas width="679" height="344"></canvas>
+                    <img alt="areas" class="img-areas canvas-img img-responsive"
+                        src="<?php echo get_stylesheet_directory_uri() ?>/images/featured-area6.jpg" />
+                </div>
+                <span>Katy</span>
+            </a>
+
+        </div>
     </div>
 </section>
 <!-- areas end -->

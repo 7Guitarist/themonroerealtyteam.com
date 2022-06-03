@@ -1015,7 +1015,7 @@ ul.aios-split-nav.nav.header-item {
 /*#region Properties Region */
 
 .hp-properties {
-  padding: 30px 24px 30px 24px;
+  /* padding: 94px 24px 30px 24px; */
 }
 
 .hp-properties .site-btn {
@@ -1023,16 +1023,28 @@ ul.aios-split-nav.nav.header-item {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: grey;
   min-width: 250px;
+  opacity: 0;
+}
+.hp-properties .site-title-primary {
+  padding-bottom: 59px;
+}
+
+.region-properties-container :hover img {
+  filter: grayscale(1);
+}
+.region-properties-container :hover .site-btn {
+  filter: grayscale(1);
+  opacity: 1;
 }
 
 .hp-properties .properties-slick {
-  max-width: 1250px;
-  margin: 0 auto;
+  /* max-width: 1250px; */
+  /* margin: 0 auto; */
 }
 .hp-properties .slick-list {
   margin: 0 -0px;
+  padding-bottom: 80px;
 }
 
 .hp-properties .slick-slide {
@@ -1051,7 +1063,7 @@ ul.aios-split-nav.nav.header-item {
 .hp-properties .properties-content {
   position: absolute;
   width: auto;
-  z-index: 4;
+  z-index: 29;
   background: #fff;
   width: 337px;
   height: 287px;
@@ -1060,8 +1072,11 @@ ul.aios-split-nav.nav.header-item {
   align-items: center;
   justify-content: center;
   left: 30px;
-  bottom: 20px;
+  bottom: -78px;
+  box-shadow: 0px 0px 108px -52px rgb(0 0 0 / 54%);
+  -webkit-box-shadow: 0px 0px 108px -52px rgb(0 0 0 / 54%);
 }
+
 .properties-content {
   position: relative;
 }
@@ -1072,7 +1087,7 @@ ul.aios-split-nav.nav.header-item {
   width: 94%;
   height: 90%;
   left: 10px;
-  top: 10px;
+
   z-index: -1;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -1342,10 +1357,39 @@ ul.aios-split-nav.nav.header-item {
 
 /*#region Areas Region */
 
-.hp-areas {
+.region-areas-container {
   padding: 30px 24px 30px 24px;
+  display: flex;
+  max-width: 1372px;
+  margin: 0 auto;
+  gap: 12px;
+  filter: grayscale(1);
 }
 
+.hp-areas .wrapper-item {
+  position: relative;
+  margin-bottom: 12px;
+  display: block;
+}
+.hp-areas .site-title-primary {
+  padding-bottom: 40px;
+}
+.area-wrapper2 {
+  padding-top: 42px;
+  display: grid;
+}
+/* .region-areas-container {
+  gap: 12px;
+} */
+.hp-areas .wrapper-item span {
+  position: absolute;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  z-index: 1;
+  bottom: 30px;
+  left: 29px;
+}
 /*#endregion Areas Region */
 
 /*#region Testimonial Region */
@@ -1645,8 +1689,16 @@ ul.aios-split-nav.nav.header-item {
 .hp-social {
   padding: 104px 24px 55px 24px;
 }
+.hp-social .social-smi {
+  max-width: 206px;
+  margin: 0 auto;
+  display: flex;
+  color: #023047;
+  font-size: 24px;
+  gap: 63px;
+}
 
-.hp-social .social-slick {
+.hp-social .social-smi .hp-social .social-slick {
   max-width: 1250px;
   margin: 0 auto;
 }
